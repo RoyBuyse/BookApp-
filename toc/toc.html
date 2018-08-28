@@ -1,0 +1,41 @@
+<!--
+  Generated template for the TocPage page.
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar>
+      <ion-title>Table of Contents</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content padding>
+    <h1>Table of Contents</h1>
+    <br />
+    <ion-list>
+        <ion-item [navPush]="homePage">
+           Cover Page
+        </ion-item>
+       
+        <ion-item [navPush]="tocPage">
+           Table of Contents 
+        </ion-item>
+       
+        <ion-item [navPush]="introductionPage">
+           Introduction 
+        </ion-item>
+  
+        <ion-item [navPush]="chapteronePage">
+          Chapter One
+        </ion-item>
+     </ion-list>
+    <br />
+    <ion-buttons>
+        <button ion-button [navPush]="homePage">Previous Page</button>
+   
+        <button ion-button [navPush]="introductionPage">Next Page</button>
+    </ion-buttons>
+  </ion-content>
